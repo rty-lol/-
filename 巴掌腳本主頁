@@ -32,36 +32,9 @@ script:AddButton({
     OrionLib:Destroy()
 	end
 })
-local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Giangplay/Script/main/Orion_Library_PE_V2.lua")))()
-local Window = OrionLib:MakeWindow({IntroText = "腳本主頁", Name = "首頁", HidePremium = false, SaveConfig = true, ConfigFolder = "me的腳本"})
-OrionLib:MakeNotification({
-	Name = "腳本已載入!",
-	Content = "",
-	Image = "IntroIcon = rbxassetid://15315284749",
-	Time = 5
-})
-local script = Window:MakeTab({
-	Name = "腳本",
-	PremiumOnly = false
-})
-script:AddButton({
-	Name = "主要腳本",
+sript:AddButton({
+	Name = "徹底關閉腳本",
 	Callback = function()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/rty-lol/-/refs/heads/main/%E4%B8%BB%E8%A6%81%E8%85%B3%E6%9C%AC")))()
-    OrionLib:Destroy()
-	end
-})
-script:AddButton({
-	Name = "導遊腳本",
-	Callback = function()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/rty-lol/-/refs/heads/main/%E5%B0%8E%E9%81%8A%E8%85%B3%E6%9C%AC")))()
-    OrionLib:Destroy()
-	end
-})
-script:AddButton({
-	Name = "巴西腳本",
-	Callback = function()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/rty-lol/-/refs/heads/main/%E5%B7%B4%E8%A5%BF%E8%85%B3%E6%9C%AC")))()
     OrionLib:Destroy()
 	end
 })
