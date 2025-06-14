@@ -32,7 +32,7 @@ script:AddButton({
     OrionLib:Destroy()
 	end
 })
-sript:AddButton({
+script:AddButton({
 	Name = "徹底關閉腳本",
 	Callback = function()
     OrionLib:Destroy()
