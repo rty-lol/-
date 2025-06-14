@@ -36,6 +36,10 @@ local anti = Window:MakeTab({
 	Name = "基礎",
 	PremiumOnly = false
 })
+local close = Window:MakeTab({
+	Name = "關閉",
+	PremiumOnly = false
+})
 TP:AddButton({
 	Name = "四顆心打導遊",
 	Callback = function()
@@ -355,4 +359,10 @@ for i,v in pairs(game.Workspace:GetChildren()) do
 task.wait()
 end
 	end    
+})
+close:AddButton({
+	Name = "徹底關閉腳本",
+	Callback = function()
+    OrionLib:Destroy()
+	end
 })
