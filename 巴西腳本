@@ -14,6 +14,10 @@ local anti = Window:MakeTab({
     Name = "基礎",
     PremiumOnly = false
 })
+local close = Window:MakeTab({
+	Name = "關閉",
+	PremiumOnly = false
+})
 badge:AddButton({
 	Name = "UTG手套",
 	Callback = function()      	
@@ -117,4 +121,10 @@ end
 task.wait()
 end
 	end    
+})
+close:AddButton({
+	Name = "徹底關閉腳本",
+	Callback = function()
+    OrionLib:Destroy()
+	end
 })
