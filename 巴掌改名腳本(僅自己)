@@ -29,6 +29,6 @@ changeNametag()
 LocalPlayer.CharacterAdded:Connect(function(character)
 
     character:WaitForChild("Head", 10)
-    wait(0.5) 
+    wait(0.4) 
     changeNametag()
 end)
