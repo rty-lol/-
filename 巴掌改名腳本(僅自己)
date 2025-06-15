@@ -2,7 +2,7 @@ local Players = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 local LocalPlayer = Players.LocalPlayer
 
-local savedName = "cool player"
+local savedName = "yrnl"
 
 local function changeNametag()
     local playerName = LocalPlayer.Name
